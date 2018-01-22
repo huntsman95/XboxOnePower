@@ -1,4 +1,4 @@
-# PS-XboxOnePower
+# PSModule Invoke-XboxOnePower
 
 .SYNOPSIS
 
@@ -26,9 +26,12 @@ Invoke-XboxOnePower -LiveID ABCDEF1234567890 -IP 192.168.69.69
 .NOTES
 
 This script runs best on a local network (WAN functionality not guaranteed since my network is secure and doesn't support UPnP port forwarding).  
-  
+
 To get the LiveID of your Xbox One:  
 1. Press the Xbox button on your controller to open the guide  
 2. Select 'Settings'  
 3. Under 'System', select 'Console info'  
 4. The LiveID is under "Xbox Live device ID"
+
+This script supports the use of a 'config.json' file with variables: 'LiveID' and 'IP' to permit the execution of this script, sans-parameters.
+This is useful in a home-automation scenario where specifying parameters might add complexity.
